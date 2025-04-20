@@ -1,0 +1,211 @@
+/* Estilos gerais */
+@font-face {
+  font-family: 'DistantGalaxy';
+  src: url('./assets/fonts/SfDistantGalaxyAltoutline-e2Bp.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+    background: linear-gradient(to bottom right, red, black);
+    background-image: url('imagens/tatooine.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   font-family: 'DistantGalaxy', sans-serif;
+   color: rgb(22, 22, 24);
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f424;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /*overflow: hidden; Evitar rolagem na página */
+    background-color: rgb(151, 213, 51);
+}
+
+/* Fundo gradiente de vermelho para preto (da esquerda superior para a direita inferior) */
+.gradient-background {
+    background: linear-gradient(to bottom right, red, black);
+    /*background-image: url('imagens/batatafrita.png');*/
+    padding: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Container principal */
+.container {
+    width: 100vw;
+    margin:  auto;
+    padding: 10px; /* Diminuir o espaçamento interno */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+     Container principal 
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px; /* Diminuir o espaçamento interno */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+}
+
+/* Ícones das redes sociais */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(36, 35, 35, 0.432);
+    padding: 10px 0;
+    margin-bottom: 10px; /* Reduzir o espaço entre os ícones e o próximo conteúdo */
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 20px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Efeito hover nos ícones das redes sociais */
+.social-icons a:hover {
+    color: orange; /* Muda a cor para laranja quando o mouse passa sobre os ícones */
+}
+
+/* Titulo do Cardápio */
+.titulo-Cardapio{
+
+    align-items: center;
+    background-color: rgba(224, 224, 221, 0.415); /* Transparência */
+    border-radius: 8px;
+    padding: 10px  20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin:  auto;
+    margin-bottom: 10px; /* Diminuir espaço entre o cardápio e o resumo */
+    font-size: 48px;           /* Aumenta o tamanho da fonte */
+    font-weight: bold;         /* Deixa mais destacada */
+    text-align: center; 
+    line-height: 1.4;       /* Aumenta o espaço vertical entre as linhas */
+    overflow: visible;      /* Garante que nada seja cortado */
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+/* Cardápio */
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(5, 3fr);
+    gap: 40px;
+    justify-content: center; /* Centraliza o conteúdo do grid */
+    /*display: flex; flex-direction: column;*/
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3); /* Transparência */
+    border-radius: 8px;
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(222, 223, 218, 0.1);
+    width: 100%;
+    margin: 0 auto 10px;;
+    margin-bottom: 10px; /* Diminuir espaço entre o cardápio e o resumo */
+}
+
+/* Item de cardápio */
+.menu-item {
+    background-color: rgba(150, 151, 139, 0.349); /* Transparência */
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0; /* Diminuir o espaçamento entre os itens */
+    width: 100%;
+}
+
+.item-info {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-info input {
+    width: 60px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.menu-item-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+/* Botão */
+button {
+    background-color: #ed9f0d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px; /* Diminuir espaço entre o botão e os itens */
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Resumo do pedido */
+.order-summary {
+    background-color: rgba(241, 231, 230, 0.8); /* Transparência */
+    padding: 20px;
+    margin-top: 10px;
+    border: 2px solid #c1d7c4;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 10px; /* Diminuir o espaço entre o resumo e o footer */
+    margin-left: auto;
+    margin-right: auto; /* Garantir que fique centralizado */
+}
+
+/* Alinha o resumo do pedido com o tamanho da div do cardápio */
+#resumoPedido {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(18, 12, 12, 0.341);
+    color: white;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px; /* Ajuste o espaçamento entre o conteúdo e o footer */
+}
+
+footer a {
+    color: #18cecb;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

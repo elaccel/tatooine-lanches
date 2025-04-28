@@ -9,7 +9,7 @@
 
 body {
     background: linear-gradient(to bottom right, red, black);
-    background-image: url('imagens/tatooine.jpg');
+    background-image: url('/imagens/tatooine.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

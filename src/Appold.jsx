@@ -1,10 +1,5 @@
-Menu.jsx
-
-> onQuantidadeChange(key, precos[key], qtd)}
-          />
-        );
-      })}import React from "react";
-import MenuItem from "./components/MenuItem";
+import React from "react";
+import MenuItem from "./componentes/MenuItem";
 
 const precos = {
   cachorroQuente: 7.0,
@@ -33,7 +28,10 @@ function Menu({ pedido, onQuantidadeChange }) {
             preco={precos[key]}
             imagem={`images/${key}.png`}
             quantidade={quantidade}
-            onQuantidadeChange={(qtd) =
+            onQuantidadeChange={(qtd) => onQuantidadeChange(key, precos[key], qtd)}
+          />
+        );
+      })}
     </div>
   );
 }

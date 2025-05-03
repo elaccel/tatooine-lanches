@@ -9,7 +9,7 @@
 
 body {
     background: linear-gradient(to bottom right, red, black);
-    background-image: url('imagens/tatooine.jpg');
+    background-image: url('/imagens/tatooine.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -91,7 +91,7 @@ body {
     background-color: rgba(224, 224, 221, 0.415); /* Transparência */
     border-radius: 8px;
     padding: 10px  20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(18, 145, 150, 0.1);
     width: 90%;
     margin:  auto;
     margin-bottom: 10px; /* Diminuir espaço entre o cardápio e o resumo */
@@ -110,7 +110,7 @@ body {
 /* Cardápio */
 .menu-container {
     display: grid;
-    grid-template-columns: repeat(5, 3fr);
+    grid-template-columns: repeat(10, 1fr);
     gap: 40px;
     justify-content: center; /* Centraliza o conteúdo do grid */
     /*display: flex; flex-direction: column;*/
@@ -118,7 +118,7 @@ body {
     background-color: rgba(255, 255, 255, 0.3); /* Transparência */
     border-radius: 8px;
     padding: 50px;
-    box-shadow: 0 4px 8px rgba(222, 223, 218, 0.1);
+    box-shadow: 0 4px 8px rgba(42, 10, 122, 0.1);
     width: 100%;
     margin: 0 auto 10px;;
     margin-bottom: 10px; /* Diminuir espaço entre o cardápio e o resumo */

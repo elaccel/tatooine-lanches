@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 
 const itens = [
-  { id: 1, nome: "Vader Burguer", preco: 10.3, imagem: "/public/imagens/vaderburguer.jpg" },
-  { id: 2, nome: "BB8 Burguer", preco: 15.0, imagem: "/public/imagens/bb8.jpg" },
-  { id: 3, nome: "Anakin kids", preco: 7.0, imagem: "/public/imagens/infantil.jpg" },
-  { id: 4, nome: "Millenium Pizza", preco: 9.0, imagem: "/public/imagens/pizza.jpg" },
-  { id: 5, nome: "Estrela Torta", preco: 7.0, imagem: "/public/imagens/torta.jpg" },
-  { id: 6, nome: "Jaba Pestisco", preco: 6.0, imagem: "/public/imagens/patê.jpg" },
-  { id: 7, nome: "Rogue chips", preco: 9.0, imagem: "/public/imagens/rogue.jpg" },
-  { id: 8, nome: "Léa CupCake", preco: 10.0, imagem: "/public/imagens/lea.jpg" },
-  { id: 9, nome: "Jedi Drink", preco: 6.0, imagem: "/public/imagens/bebidaazul.jpg" },
-  { id: 10, nome: "Yoda Suco", preco: 9.0, imagem: "/public/imagens/sucoyoda.jpg" },
-];
+    { id: 1, nome: "Vader Burguer", preco: 10.3, imagem: "./imagens/vaderburguer.jpg" },
+    { id: 2, nome: "BB8 Burguer", preco: 15.0, imagem: "./imagens/bb8.jpg" },
+    { id: 3, nome: "Anakin kids", preco: 7.0, imagem: "./imagens/infantil.jpg" },
+    { id: 4, nome: "Millenium Pizza", preco: 9.0, imagem: "./imagens/pizza.jpg" },
+    { id: 5, nome: "Estrela Torta", preco: 7.0, imagem: "./imagens/torta.jpg" },
+    { id: 6, nome: "Jaba Pestisco", preco: 6.0, imagem: "./imagens/patê.jpg" },
+    { id: 7, nome: "Rogue chips", preco: 9.0, imagem: "./imagens/rogue.jpg" },
+    { id: 8, nome: "Léa CupCake", preco: 10.0, imagem: "./imagens/lea.jpg" },
+    { id: 9, nome: "Jedi Drink", preco: 6.0, imagem: "./imagens/bebidaazul.jpg" },
+    { id: 10, nome: "Yoda Suco", preco: 9.0, imagem: "./imagens/sucoyoda.jpg" }
+  ];
+  
 function Cardapio() {
     const [quantidades, setQuantidades] = useState({});
 
@@ -44,7 +45,7 @@ function Cardapio() {
                                 min="0"
                                 value={quantidades[item.id] || ''}
                                 onChange={e => atualizarQuantidade(item.id, e.target.value)}
-                                placeholder="Digite a quantidade"
+                                placeholder="Quantidade"
                             />
                         </div>
                         <img src={item.imagem} className="menu-item-img" alt={item.nome} />
